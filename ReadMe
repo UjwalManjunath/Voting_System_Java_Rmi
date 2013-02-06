@@ -1,0 +1,20 @@
+Electronic Voting System 
+/* created by Ujwal Manjunath */
+
+Description:
+System uses remote procedure Calls to implement a simple elecrtonic election system that allows cluients to vote for their favourite candidate in an election via RMI. The system supports five procedure calls -
+
+* Intialize()				--Intializes the system
+* Register(voterid)			--register Voterid
+* CastVote(candidatename,voterid)	--if candidate is not already in the system, add the candidate to the system with a vote count of 1, otherwise add 1 to candidate vote 	count.
+* CandidateList				-- returns a list of candidates and their current votes.
+* VoteCount(candidateName0		-- returns the integer vote total for the named candidate.
+
+
+
+How to run
+1. Compile all the Java files
+2. Run rmiregistry & in your linux machine (for windows usage refer to rmi documentation)
+3. Run command java VotingServer
+4. Open another terminal
+5. And run java VotingClient.
